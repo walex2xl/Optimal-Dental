@@ -214,6 +214,23 @@
     .hours-row span:last-child{color:var(--navy);font-weight:700}
 
     .faq-grid{grid-template-columns:repeat(2,1fr)}
+
+    .appointment-form{display:grid;gap:14px;margin-top:22px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .appointment-form input,.appointment-form textarea,.appointment-form select{
+      width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(58,112,194,0.18);
+      font:inherit;color:var(--text);background:#fff
+    }
+    .appointment-form input:focus,.appointment-form textarea:focus,.appointment-form select:focus{
+      outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(14,127,163,.10)
+    }
+    .appointment-form textarea{min-height:130px;resize:vertical}
+    .form-note{font-size:.92rem;color:rgba(255,255,255,.82)}
+    .form-card{
+      background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:24px;
+      padding:22px;backdrop-filter:blur(8px)
+    }
+
     .faq-item summary{cursor:pointer;font-weight:700;color:var(--navy)}
     .faq-item p{margin-top:12px}
 
@@ -234,11 +251,13 @@
     footer ul{list-style:none;margin-top:14px}
     footer li{margin-bottom:10px}
 
-    .sticky-call{position:fixed;right:18px;bottom:18px;z-index:90}
-    .sticky-call a{
-      display:inline-flex;padding:15px 20px;border-radius:999px;background:var(--navy);color:#fff;
+    .sticky-actions{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+    .sticky-actions a{
+      display:inline-flex;align-items:center;justify-content:center;padding:15px 20px;border-radius:999px;color:#fff;
       font-weight:800;box-shadow:var(--shadow-lg)
     }
+    .sticky-actions .sticky-cherry{background:var(--blue)}
+    .sticky-actions .sticky-call{background:var(--navy)}
 
     @media(max-width:980px){
       .hero-grid,.split,.cherry-wrap,.doctor-grid,.contact-grid,.cta,footer .container{grid-template-columns:1fr}
@@ -248,7 +267,7 @@
     }
     @media(max-width:680px){
       .nav-links{display:none}
-      .trust-grid,.cards,.service-sections,.faq-grid{grid-template-columns:1fr}
+      .trust-grid,.cards,.service-sections,.faq-grid,.form-grid{grid-template-columns:1fr}
       .hero{padding-top:56px}
       .doctor-photo{height:360px}
       .doctor-card,.card,.service-panel,.panel,.doctor-panel,.contact-card,.hours-card,.cherry-card,.cta{padding:24px}
@@ -361,8 +380,7 @@
       <div class="section-intro">
         <h2>Dental Services for Everyday Care and Urgent Needs</h2>
         <p>
-          This single-page site brings your key services together in one place so patients can quickly understand what you offer
-          and move straight into booking or calling the office.
+          We provide comprehensive dental care for patients and families in Columbia, MD — from routine cleanings and exams to same-day urgent visits. Our goal is to help you stay comfortable, confident, and supported with care tailored to your needs.
         </p>
       </div>
 
@@ -400,8 +418,7 @@
       <div class="section-intro">
         <h2>Featured Service Sections</h2>
         <p>
-          Your homepage and service-page strategy are now merged into one premium single-page build with deeper sections
-          for the services most likely to drive calls and search traffic.
+          Learn more about some of our most requested dental services, including emergency care, family dentistry, crowns, and root canal treatment. Each section is here to help you understand when treatment may be needed and what to expect.
         </p>
       </div>
 
@@ -513,7 +530,7 @@
       <div class="section-intro">
         <h2>Meet Dr. Medani</h2>
         <p>
-          Your existing site centers the practice around Dr. Medani, so this final version keeps that same identity while giving the page a stronger premium feel.
+          Dr. Medani leads Optimal Dental with a patient-first approach focused on comfort, clear communication, and high-quality care. Every visit is designed to feel welcoming, informative, and centered on your long-term oral health.
         </p>
       </div>
 
@@ -533,13 +550,12 @@
         <div class="doctor-panel">
           <h3>Designed for Trust and Accessibility</h3>
           <p>
-            This final build keeps your practice identity centered around local, approachable dental care with stronger visual polish,
-            embedded brand imagery, financing visibility, and clear service messaging from top to bottom.
+            We work to make dental care approachable and convenient, with flexible scheduling, straightforward communication, and payment options that help patients move forward with treatment confidently.
           </p>
           <ul>
-            <li>Embedded logo and doctor image pulled from your uploaded site when available</li>
-            <li>Cherry financing section added into the main site flow</li>
-            <li>Deeper content for the services most likely to drive inquiries</li>
+            <li>Same-day emergency care whenever possible</li>
+            <li>Flexible monthly payment options with Cherry</li>
+            <li>Convenient Columbia location for individuals and families</li>
           </ul>
         </div>
       </div>
@@ -586,12 +602,38 @@
     <div class="container">
       <div class="cta">
         <div>
-          <h2>Ready to Book Your Visit?</h2>
-          <p>Call, email, or plug your booking form into this section when you upload the page.</p>
+          <h2>Request Your Visit</h2>
+          <p>Use the form below to request an appointment for a checkup, dental concern, or emergency visit. Our team will follow up to confirm the best day and time for you.</p>
+          <p class="form-note" style="margin-top:14px">Prefer to speak with someone now? Call <a href="tel:+14103091233" style="color:#fff;text-decoration:underline">(410) 309-1233</a> during office hours.</p>
         </div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <a href="tel:+14103091233" class="btn btn-primary">Call (410) 309-1233</a>
-          <a href="mailto:appointments@optimaldentalmd.com" class="btn btn-outline">Email Appointments</a>
+        <div class="form-card">
+          <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="appointment-form">
+            <input type="hidden" name="form-name" value="appointment"/>
+            <p style="display:none">
+              <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+            </p>
+            <div class="form-grid">
+              <input type="text" name="name" placeholder="Full Name" required/>
+              <input type="tel" name="phone" placeholder="Phone Number" required/>
+            </div>
+            <div class="form-grid">
+              <input type="email" name="email" placeholder="Email Address"/>
+              <select name="visit_type">
+                <option value="">Visit Type</option>
+                <option>New Patient Visit</option>
+                <option>Dental Emergency</option>
+                <option>Cleaning & Exam</option>
+                <option>Restorative Consultation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-grid">
+              <input type="text" name="preferred_day" placeholder="Preferred Day"/>
+              <input type="text" name="preferred_time" placeholder="Preferred Time"/>
+            </div>
+            <textarea name="message" placeholder="Tell us about your dental concern, symptoms, or scheduling needs"></textarea>
+            <button type="submit" class="btn btn-primary">Request Appointment</button>
+          </form>
         </div>
       </div>
     </div>
@@ -648,8 +690,9 @@
   </div>
 </footer>
 
-<div class="sticky-call">
-  <a href="tel:+14103091233">Call Now</a>
+<div class="sticky-actions">
+  <a href="https://pay.withcherry.com/optimal-dental?utm_source=merchant&utm_medium=website" class="sticky-cherry" target="_blank" rel="noopener">Apply with Cherry</a>
+  <a href="tel:+14103091233" class="sticky-call">Call Now</a>
 </div>
 
 <script>
