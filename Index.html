@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emergency & Family Dentist in Columbia MD | Optimal Dental</title>
-  <meta name="description" content="Optimal Dental in Columbia, MD provides emergency dentistry, family dentistry, crowns, root canals, cosmetic dentistry, and preventive care. Call (410) 309-1233 or request an appointment today."/>
+  <title>Emergency Dentist in Columbia MD | Family & Same-Day Dental Care | Optimal Dental</title>
+  <meta name="description" content="Optimal Dental provides same-day emergency dentistry, family dental care, crowns, root canals, cosmetic dentistry, and preventive visits in Columbia, MD. Call (410) 309-1233 to book your visit."/>
   <meta name="keywords" content="dentist Columbia MD, emergency dentist Columbia MD, family dentist Columbia MD, same day dentist Columbia MD, dental crowns Columbia MD, root canal Columbia MD"/>
   <meta name="author" content="Optimal Dental"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://www.optimaldentalmd.com/"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Emergency & Family Dentist in Columbia MD | Optimal Dental"/>
-  <meta property="og:description" content="Same-day emergency dental care, family dentistry, crowns, root canals, and more in Columbia, MD."/>
+  <meta property="og:title" content="Emergency Dentist in Columbia MD | Family & Same-Day Dental Care | Optimal Dental"/>
+  <meta property="og:description" content="Same-day emergency dental care, family dentistry, crowns, root canals, cosmetic dentistry, and preventive care in Columbia, MD."/>
   <meta property="og:url" content="https://www.optimaldentalmd.com/"/>
   <meta property="og:site_name" content="Optimal Dental"/>
   <meta property="og:image" content="https://www.optimaldentalmd.com/og-image.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Emergency & Family Dentist in Columbia MD | Optimal Dental"/>
-  <meta name="twitter:description" content="Compassionate dental care in Columbia, MD for emergencies, routine visits, crowns, root canals, and more."/>
+  <meta name="twitter:title" content="Emergency Dentist in Columbia MD | Family & Same-Day Dental Care | Optimal Dental"/>
+  <meta name="twitter:description" content="Same-day emergency dental care, family dentistry, crowns, root canals, cosmetic dentistry, and preventive care in Columbia, MD."/>
   <meta name="twitter:image" content="https://www.optimaldentalmd.com/og-image.jpg"/>
 
   <script type="application/ld+json">
@@ -36,7 +36,7 @@
       "postalCode":"21046",
       "addressCountry":"US"
     },
-    "areaServed":["Columbia, MD","Ellicott City, MD","Clarksville, MD","Howard County, MD"],
+    "areaServed":["Columbia, MD","Ellicott City, MD","Clarksville, MD","Laurel, MD","Howard County, MD"],
     "openingHoursSpecification":[
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"16:30"}
     ],
@@ -55,7 +55,9 @@
       {"@type":"Question","name":"Do you treat children and adults?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide family-friendly dental care for patients of different ages, including preventive visits and restorative treatment."}},
       {"@type":"Question","name":"What should I do if I have a broken tooth?","acceptedAnswer":{"@type":"Answer","text":"Rinse gently with warm water, avoid chewing on that side, and call our office as soon as possible for guidance and scheduling."}},
       {"@type":"Question","name":"Where is Optimal Dental located?","acceptedAnswer":{"@type":"Answer","text":"Optimal Dental is located at 7060 Oakland Mills Rd #J, Columbia, MD 21046."}},
-      {"@type":"Question","name":"What services does Optimal Dental provide?","acceptedAnswer":{"@type":"Answer","text":"We provide emergency dentistry, family dentistry, crowns, root canals, preventive care, cosmetic dentistry, and children's dentistry."}}
+      {"@type":"Question","name":"What services does Optimal Dental provide?","acceptedAnswer":{"@type":"Answer","text":"We provide emergency dentistry, family dentistry, crowns, root canals, preventive care, cosmetic dentistry, and children's dentistry."}},
+      {"@type":"Question","name":"Do you accept new patients in Columbia, MD?","acceptedAnswer":{"@type":"Answer","text":"Yes. Optimal Dental welcomes new patients from Columbia, Ellicott City, Clarksville, Laurel, and surrounding Howard County communities."}},
+      {"@type":"Question","name":"What should I expect at my first visit?","acceptedAnswer":{"@type":"Answer","text":"Your first visit typically includes a conversation about your concerns, a dental examination, any needed imaging, and a clear treatment plan tailored to your oral health needs."}}
     ]
   }
   </script>
@@ -259,8 +261,18 @@
     .sticky-actions .sticky-cherry{background:var(--blue)}
     .sticky-actions .sticky-call{background:var(--navy)}
 
+    .location-band{background:var(--navy);color:#fff;border-radius:24px;padding:28px;box-shadow:var(--shadow-lg)}
+    .location-band h2,.location-band h3,.location-band p,.location-band li{color:#fff}
+    .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .mini-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+    .mini-card h3{margin-bottom:10px}
+    .map-wrap iframe{width:100%;height:380px;border:0;border-radius:22px;box-shadow:var(--shadow-lg)}
+    .cta-list{list-style:none;margin-top:18px;display:grid;gap:10px}
+    .cta-list li{padding-left:24px;position:relative;color:rgba(255,255,255,.88)}
+    .cta-list li::before{content:"•";position:absolute;left:8px;top:0;color:#fff}
+
     @media(max-width:980px){
-      .hero-grid,.split,.cherry-wrap,.doctor-grid,.contact-grid,.cta,footer .container{grid-template-columns:1fr}
+      .hero-grid,.split,.cherry-wrap,.doctor-grid,.contact-grid,.cta,footer .container,.mini-grid{grid-template-columns:1fr}
       .trust-grid,.cards,.service-sections,.faq-grid{grid-template-columns:1fr 1fr}
       .doctor-photo{height:420px}
       .badge-top,.badge-bottom{position:static;margin-top:12px}
@@ -307,11 +319,12 @@
     </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#service-pages">Featured Services</a></li>
+      <li><a href="#emergency">Emergency Care</a></li>
       <li><a href="#cherry">Payment Options</a></li>
-      <li><a href="#doctor">Meet Dr. Medani</a></li>
+        <li><a href="#map">Location & Directions</a></li>
+      <li><a href="#why-choose">Why Choose Us</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Request Visit</a></li>
+      <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
     </ul>
   </div>
 </nav>
@@ -320,22 +333,22 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Emergency & Family Dentistry in Columbia, MD</span>
-        <h1>Comfort-Focused Dental Care for Emergencies, Family Visits, Crowns, and More</h1>
+        <span class="eyebrow">Emergency Dentist, Family Dentistry & Restorative Care in Columbia, MD</span>
+        <h1>Emergency Dentist in Columbia MD for Same-Day Relief, Family Care, Crowns, and Root Canals</h1>
         <p>
-          Optimal Dental provides compassionate dental care for patients in Columbia, Maryland and nearby communities.
-          Whether you need same-day help for tooth pain, preventive care for your family, or restorative treatment
-          such as crowns and root canals, our office is here to help you smile with confidence.
+          Optimal Dental provides same-day emergency dental care, family dentistry, crowns, root canals, cosmetic treatment,
+          and preventive visits for patients in Columbia, Maryland. Our office serves Columbia, Ellicott City, Clarksville,
+          Laurel, and nearby Howard County communities with clear recommendations, timely care, and a comfort-focused approach.
         </p>
         <div class="hero-actions">
           <a href="tel:+14103091233" class="btn btn-primary">Call (410) 309-1233</a>
-          <a href="#contact" class="btn btn-outline">Request Appointment</a>
+          <a href="#contact" class="btn btn-outline">Book Appointment</a>
           <a href="https://pay.withcherry.com/optimal-dental?utm_source=merchant&utm_medium=website" class="btn btn-primary">Check Monthly Payment</a>
         </div>
         <div class="hero-badges">
           <span>Same-Day Emergency Visits</span>
-          <span>New Patients Welcome</span>
-          <span>Serving Columbia & Nearby Areas</span>
+          <span>Accepting New Patients</span>
+          <span>Serving Columbia, Ellicott City, Clarksville & Laurel</span>
         </div>
       </div>
 
@@ -349,7 +362,7 @@
               <strong>Dr. Medani</strong>
               <span>Lead Dentist & Founder</span>
             </div>
-            <a href="#doctor" class="btn btn-outline">Meet Dr. Medani</a>
+            <a href="#contact" class="btn btn-outline">Request Your Visit</a>
           </div>
         </div>
         <div class="floating-badge badge-top">
@@ -367,10 +380,69 @@
   <section>
     <div class="container">
       <div class="trust-grid">
-        <div class="trust-item"><strong>Emergency Dentistry</strong><span>Fast help for urgent tooth pain, broken teeth, swelling, and lost restorations.</span></div>
-        <div class="trust-item"><strong>Family Dentistry</strong><span>Comfortable ongoing dental care for adults, children, and families.</span></div>
-        <div class="trust-item"><strong>Restorative Care</strong><span>Crowns, fillings, root canals, and solutions that restore comfort and function.</span></div>
-        <div class="trust-item"><strong>Convenient Location</strong><span>Easy access for patients in Columbia, Ellicott City, Clarksville, and Howard County.</span></div>
+        <div class="trust-item"><strong>Same-Day Emergency Visits</strong><span>Fast treatment for severe tooth pain, broken teeth, swelling, and lost crowns or fillings.</span></div>
+        <div class="trust-item"><strong>Family Dental Care</strong><span>Preventive and restorative dentistry for adults, children, and households who want one trusted local office.</span></div>
+        <div class="trust-item"><strong>Crowns & Root Canals</strong><span>Restorative treatment designed to relieve pain, preserve teeth, and restore everyday function.</span></div>
+        <div class="trust-item"><strong>Convenient Columbia Location</strong><span>Easy access from Oakland Mills, Ellicott City, Clarksville, Laurel, and surrounding Howard County neighborhoods.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-choose">
+    <div class="container">
+      <div class="location-band">
+        <h2>Why Columbia Patients Choose Optimal Dental</h2>
+        <p>
+          Patients choose Optimal Dental when they want an office that can handle urgent dental pain, routine family care,
+          and restorative treatment in one convenient Columbia location. Our approach is centered on clear communication,
+          timely appointments, and treatment recommendations that make sense for your oral health and budget.
+        </p>
+        <div class="mini-grid">
+          <div class="mini-card">
+            <h3>Same-Day Urgent Care</h3>
+            <p>Fast help for severe tooth pain, swelling, broken teeth, lost crowns, and other dental emergencies.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Local Convenience</h3>
+            <p>Easy access from Columbia, Ellicott City, Clarksville, Laurel, and surrounding Howard County communities.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Clear Treatment Planning</h3>
+            <p>We explain what is happening, what needs attention now, and which treatment options best protect your smile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="new-patient" style="background:var(--offwhite)">
+    <div class="container split">
+      <div class="panel">
+        <h2>Your First Visit at Optimal Dental</h2>
+        <p>
+          New patients can expect a thoughtful first visit focused on your concerns, comfort, and long-term oral health.
+          We review your symptoms, complete an exam, take any needed imaging, and explain the next steps in plain language.
+        </p>
+        <ul class="checklist">
+          <li>Discussion of pain, concerns, dental history, and goals</li>
+          <li>Comprehensive exam and any needed imaging</li>
+          <li>Clear explanation of findings and treatment priorities</li>
+          <li>Preventive, restorative, or emergency care recommendations</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Dentist Near You in Columbia MD</h2>
+        <p>
+          Optimal Dental is located at 7060 Oakland Mills Rd #J, Columbia, MD 21046. Patients searching for a dentist near Oakland Mills,
+          a family dentist in Columbia, or an emergency dentist close to home can reach our office easily from nearby residential communities,
+          schools, and business areas throughout Howard County.
+        </p>
+        <ul class="checklist">
+          <li>Convenient for Columbia residents and commuters</li>
+          <li>Easy drive from Ellicott City, Clarksville, and Laurel</li>
+          <li>Same office for checkups, crowns, root canals, and urgent care</li>
+          <li>New patient and emergency appointment requests accepted online</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -378,36 +450,44 @@
   <section id="services" style="background:var(--cream)">
     <div class="container">
       <div class="section-intro">
-        <h2>Dental Services for Everyday Care and Urgent Needs</h2>
+        <h2>Dental Services in Columbia MD for Urgent Problems and Long-Term Oral Health</h2>
         <p>
-          We provide comprehensive dental care for patients and families in Columbia, MD — from routine cleanings and exams to same-day urgent visits. Our goal is to help you stay comfortable, confident, and supported with care tailored to your needs.
+          Our office provides emergency dentistry, family dentistry, dental crowns, root canal treatment, cosmetic dentistry,
+          and preventive care in Columbia, MD. Whether you need fast relief for a painful dental problem or a long-term dental home,
+          Optimal Dental delivers practical treatment plans built around your oral health goals.
         </p>
       </div>
 
       <div class="cards">
         <article class="card">
           <h3>Emergency Dentistry</h3>
-          <p>Same-day care whenever possible for toothaches, broken teeth, swelling, dental trauma, and other urgent concerns.</p>
+          <p>Same-day care whenever possible for toothaches, swelling, broken teeth, dental trauma, lost crowns, and other urgent concerns.</p>
+          <a class="service-anchor" href="#emergency">Emergency Care Details</a>
         </article>
         <article class="card">
           <h3>Family Dentistry</h3>
-          <p>Routine checkups, cleanings, preventive care, and ongoing support for patients of different ages.</p>
+          <p>Routine checkups, cleanings, preventive care, and ongoing support for children, adults, and families.</p>
+          <a class="service-anchor" href="#family">Family Dentistry Details</a>
         </article>
         <article class="card">
           <h3>Dental Crowns</h3>
-          <p>Natural-looking crowns that help restore damaged teeth, improve strength, and protect long-term oral health.</p>
+          <p>Natural-looking crowns that restore damaged teeth, improve strength, and protect long-term oral health.</p>
+          <a class="service-anchor" href="#crowns">Crown Treatment Details</a>
         </article>
         <article class="card">
           <h3>Root Canal Treatment</h3>
-          <p>Gentle treatment to relieve pain, address infection, and help save teeth that might otherwise be lost.</p>
+          <p>Comfort-focused treatment to relieve pain, address infection, and help save teeth that might otherwise be lost.</p>
+          <a class="service-anchor" href="#root-canal">Root Canal Details</a>
         </article>
         <article class="card">
           <h3>Cosmetic Dentistry</h3>
-          <p>Smile-enhancing care that supports confidence with a treatment plan tailored to your needs and goals.</p>
+          <p>Smile-enhancing care that improves confidence with treatment tailored to your goals and oral health needs.</p>
+          <a class="service-anchor" href="#contact">Ask About Cosmetic Dentistry</a>
         </article>
         <article class="card">
           <h3>Children's Dentistry</h3>
           <p>Welcoming visits that help children feel comfortable while building strong dental habits from an early age.</p>
+          <a class="service-anchor" href="#contact">Schedule a Family Visit</a>
         </article>
       </div>
     </div>
@@ -416,9 +496,10 @@
   <section id="service-pages">
     <div class="container">
       <div class="section-intro">
-        <h2>Featured Service Sections</h2>
+        <h2>Most Requested Dental Treatments at Optimal Dental</h2>
         <p>
-          Learn more about some of our most requested dental services, including emergency care, family dentistry, crowns, and root canal treatment. Each section is here to help you understand when treatment may be needed and what to expect.
+          Explore the treatments patients ask about most often, from same-day emergency care to crowns and root canal treatment.
+          These sections explain when care may be needed, what symptoms matter, and how our Columbia office approaches treatment.
         </p>
       </div>
 
@@ -427,7 +508,7 @@
           <h3>Emergency Dentist in Columbia, MD</h3>
           <p>
             If you have severe tooth pain, swelling, a broken tooth, or a lost filling or crown, it is important to get care quickly.
-            Optimal Dental offers same-day emergency dental appointments whenever possible so patients can get relief and guidance fast.
+            Optimal Dental offers same-day emergency dental appointments whenever possible so patients can get relief fast and avoid letting the problem become more serious.
           </p>
           <p>
             We welcome both new and existing patients for urgent dental care and focus on restoring comfort, protecting your teeth,
@@ -439,7 +520,7 @@
         <article class="service-panel" id="family">
           <h3>Family Dentist in Columbia, MD</h3>
           <p>
-            Our office provides patient-centered dental care for families looking for consistent, comfortable visits close to home.
+            Our office provides family dental care for patients who want consistent, comfortable visits close to home in Columbia and nearby communities.
             From routine checkups and cleanings to treatment planning and oral health education, we work to make every visit smooth and reassuring.
           </p>
           <p>
@@ -456,7 +537,7 @@
             A crown helps restore the shape, function, and strength of the tooth while blending in naturally with your smile.
           </p>
           <p>
-            At Optimal Dental, we evaluate the tooth carefully and explain whether a crown is the best option for long-term support and comfort.
+            At Optimal Dental, we evaluate the tooth carefully and explain whether a crown is the right option for long-term support, comfort, and appearance.
           </p>
           <a class="service-anchor" href="#contact">Ask About Crowns</a>
         </article>
@@ -469,7 +550,7 @@
           </p>
           <p>
             If you have persistent tooth pain, pressure, sensitivity, or swelling, our office can evaluate the tooth and determine whether
-            root canal treatment or another restorative approach is appropriate.
+            root canal treatment or another restorative approach is appropriate for protecting the tooth and stopping the pain.
           </p>
           <a class="service-anchor" href="#contact">Schedule an Evaluation</a>
         </article>
@@ -480,19 +561,19 @@
   <section id="cherry" style="background:var(--offwhite)">
     <div class="container cherry-wrap">
       <div class="cherry-card">
-        <h2>Flexible Payment Options With Cherry</h2>
+        <h2>Flexible Payment Options for Dental Treatment</h2>
         <p>
-          Help patients explore monthly payment options before treatment. This keeps your financing section visible,
-          premium-looking, and easy to use without leaving the site.
+          Cost should not keep you from treating a painful tooth, restoring a damaged smile, or moving forward with recommended care.
+          Patients can review monthly payment options through Cherry before treatment and apply directly online.
         </p>
         <p>
-          The calculator widget below is configured with your existing Cherry setup so patients can preview options and apply directly.
+          Use the calculator below to estimate payments for recommended treatment and review financing options before your visit.
         </p>
         <a href="https://pay.withcherry.com/optimal-dental?utm_source=merchant&utm_medium=website" class="btn btn-primary">Apply With Cherry</a>
       </div>
       <div class="cherry-card">
         <div id="calculator"></div>
-        <p class="note">If the calculator does not load immediately in preview, it will render after upload when the Cherry widget script runs.</p>
+        <p class="note">If the calculator does not load inside preview, it will render after upload when the Cherry widget script runs on the live site.</p>
       </div>
     </div>
   </section>
@@ -512,14 +593,14 @@
       <div class="panel">
         <h3>Areas We Serve</h3>
         <p>
-          Optimal Dental is based in Columbia, MD and serves nearby communities looking for a trusted local dentist.
+          Optimal Dental is based in Columbia, MD and serves nearby communities looking for a trusted local dentist for both urgent treatment and routine care.
         </p>
         <ul class="checklist">
           <li>Columbia, MD</li>
           <li>Ellicott City, MD</li>
           <li>Clarksville, MD</li>
           <li>Howard County, MD</li>
-          <li>Nearby Baltimore-area communities</li>
+          <li>Laurel, MD</li>
         </ul>
       </div>
     </div>
@@ -562,37 +643,60 @@
     </div>
   </section>
 
+  <section id="map">
+    <div class="container split">
+      <div class="panel">
+        <h2>Visit Our Columbia Dental Office</h2>
+        <p>
+          Whether you need a same-day emergency dentist in Columbia, a new patient exam, or restorative treatment,
+          our team is ready to help you take the next step with confidence.
+        </p>
+        <ul class="checklist">
+          <li>7060 Oakland Mills Rd #J, Columbia, MD 21046</li>
+          <li>Monday through Thursday, 8:00 AM to 4:30 PM</li>
+          <li>Call (410) 309-1233 for urgent dental concerns</li>
+          <li>Online appointment request available any time</li>
+        </ul>
+      </div>
+      <div class="map-wrap">
+        <iframe title="Optimal Dental Columbia MD map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=7060%20Oakland%20Mills%20Rd%20%23J%2C%20Columbia%2C%20MD%2021046&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
   <section id="faq" style="background:var(--cream)">
     <div class="container">
       <div class="section-intro">
         <h2>Frequently Asked Questions</h2>
-        <p>Helpful answers for patients considering Optimal Dental in Columbia, MD.</p>
+        <p>
+          These are some of the questions patients ask most often when searching for an emergency dentist,
+          family dentist, or new patient appointment in Columbia, MD.
+        </p>
       </div>
-
       <div class="faq-grid">
         <details class="faq-item">
           <summary>Do you offer same-day emergency dental appointments in Columbia, MD?</summary>
-          <p>Yes. We offer same-day emergency dental appointments whenever possible for urgent issues such as tooth pain, swelling, broken teeth, and lost restorations.</p>
+          <p>Yes. We do our best to accommodate same-day emergency dental visits for tooth pain, swelling, broken teeth, lost crowns, and other urgent dental problems.</p>
         </details>
         <details class="faq-item">
           <summary>Is Optimal Dental accepting new patients?</summary>
-          <p>Yes. New patients are welcome for emergency visits, preventive care, family dentistry, and restorative treatment.</p>
+          <p>Yes. We welcome new patients from Columbia, Ellicott City, Clarksville, Laurel, and surrounding Howard County communities.</p>
         </details>
         <details class="faq-item">
-          <summary>Do you treat children and adults?</summary>
-          <p>Yes. We provide family-friendly dental care for patients of different ages.</p>
+          <summary>What should I do if I break a tooth or lose a crown?</summary>
+          <p>Call our office as soon as possible, avoid chewing on that side, and bring the crown or broken piece with you if it is safe to do so.</p>
         </details>
         <details class="faq-item">
-          <summary>What should I do if I have a broken tooth?</summary>
-          <p>Rinse gently with warm water, avoid chewing on that side, and call our office right away so we can help guide your next steps.</p>
+          <summary>Do you provide family dental care for children and adults?</summary>
+          <p>Yes. Our office provides preventive, restorative, and routine dental care for patients of different ages.</p>
         </details>
         <details class="faq-item">
-          <summary>Do you provide crowns and root canals?</summary>
-          <p>Yes. Crowns and root canal treatment are part of the restorative services highlighted in this final site build.</p>
+          <summary>What happens during a first dental visit?</summary>
+          <p>Your first visit typically includes a conversation about your concerns, an exam, any needed imaging, and clear guidance on the next steps for treatment or preventive care.</p>
         </details>
         <details class="faq-item">
-          <summary>Where is your office located?</summary>
-          <p>Optimal Dental is located at 7060 Oakland Mills Rd #J, Columbia, MD 21046.</p>
+          <summary>Do you offer payment options for treatment?</summary>
+          <p>Yes. Patients can review financing options through Cherry and preview monthly payments before moving forward with treatment.</p>
         </details>
       </div>
     </div>
@@ -602,9 +706,9 @@
     <div class="container">
       <div class="cta">
         <div>
-          <h2>Request Your Visit</h2>
-          <p>Use the form below to request an appointment for a checkup, dental concern, or emergency visit. Our team will follow up to confirm the best day and time for you.</p>
-          <p class="form-note" style="margin-top:14px">Prefer to speak with someone now? Call <a href="tel:+14103091233" style="color:#fff;text-decoration:underline">(410) 309-1233</a> during office hours.</p>
+          <h2>Book a Dental Appointment in Columbia MD</h2>
+          <p>Use the form below to request a new patient visit, cleaning, restorative consultation, or emergency appointment. Our team will follow up to confirm the best day and time for you.</p>
+          <ul class="cta-list"><li>Fast scheduling for emergencies, new patient visits, and routine care</li><li>Convenient Columbia location with online appointment requests</li><li>Call <a href="tel:+14103091233" style="color:#fff;text-decoration:underline">(410) 309-1233</a> if you need help now</li></ul>
         </div>
         <div class="form-card">
           <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="appointment-form">
@@ -666,15 +770,16 @@
   <div class="container">
     <div>
       <h3>Optimal Dental</h3>
-      <p>Emergency and family dental care in Columbia, Maryland with clear service information, financing visibility, and easy ways to get in touch.</p>
+      <p>Optimal Dental provides same-day emergency dentistry, family dental care, crowns, root canals, cosmetic treatment, and preventive visits in Columbia, Maryland.</p>
     </div>
     <div>
       <h3>Quick Links</h3>
       <ul>
         <li><a href="#services">Services</a></li>
-        <li><a href="#service-pages">Featured Services</a></li>
+        <li><a href="#emergency">Emergency Care</a></li>
         <li><a href="#cherry">Payment Options</a></li>
-        <li><a href="#doctor">Meet Dr. Medani</a></li>
+        <li><a href="#map">Location & Directions</a></li>
+        <li><a href="#why-choose">Why Choose Us</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
